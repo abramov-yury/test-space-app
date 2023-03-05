@@ -24,6 +24,21 @@ body {
   color: var(--color-font);
 
   background-color: var(--color-background--light);
+
+  @media (map-get($breakpoints, "large")) {
+    background-image: url("../../assets/img/wave.svg"), url("../../assets/img/artboard.png");
+    background-repeat: no-repeat;
+    background-position: center 832px ,top center;
+    background-size: 1920px 160px, 1920px 992px;
+  }
+
+  @media (map-get($breakpoints, "large")) and (min-resolution: 2dppx) {
+    background-image: url("../../assets/img/wave.svg"), url("../../assets/img/artboard@2x.png");
+  }
+
+  @media (map-get($breakpoints, "large")) and (min-resolution: 3dppx) {
+    background-image: url("../../assets/img/wave.svg"), url("../../assets/img/artboard@3x.png");
+  }
 }
 
 .page-content {

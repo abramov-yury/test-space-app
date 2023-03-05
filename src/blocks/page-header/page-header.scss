@@ -11,6 +11,7 @@
 
   @media (map-get($breakpoints, "large")) {
     padding: 0 20px;
+    background-color: transparent;
   }
 
   @media (map-get($breakpoints, "extra-large")) {
