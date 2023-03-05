@@ -8,4 +8,14 @@
   @media (map-get($breakpoints, "small")) {
     padding: 0 16px;
   }
+
+  @media (map-get($breakpoints, "large")) {
+    padding: 0 20px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 }

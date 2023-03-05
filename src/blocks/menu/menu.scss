@@ -11,6 +11,17 @@
   @media (map-get($breakpoints, "small")) {
     --height--first-layer: 70px;
   }
+
+  @media (map-get($breakpoints, "large")) {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+.menu__menu-trigger {
+  @media (map-get($breakpoints, "large")) {
+    display: none;
+  }
 }
 
 .menu__first-layer {
@@ -22,6 +33,11 @@
   width: 100%;
   min-height: var(--height--first-layer);
   padding: 10px 0;
+
+  @media (map-get($breakpoints, "large")) {
+    justify-content: center;
+    padding: 10px 0 26px;
+  }
 }
 
 .menu__logo {
@@ -30,6 +46,10 @@
 
   @media (map-get($breakpoints, "small")) {
     width: 225px;
+  }
+
+  @media (map-get($breakpoints, "large")) {
+    width: 453px;
   }
 }
 
@@ -56,10 +76,29 @@
   @media (max-height: 420px) and (max-width: 768px) {
     justify-content: flex-start;
   }
+
+  @media (map-get($breakpoints, "large")) {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 0;
+
+    background-color: transparent;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    padding: 30px 0;
+  }
 }
 
 .menu__second-layer--hidden {
   display: none;
+
+  @media (map-get($breakpoints, "large")) {
+    display: flex;
+  }
 }
 
 .menu__list {
@@ -72,11 +111,31 @@
   margin: 0;
   padding: 0;
 
+  transition: gap .2s;
+
   list-style: none;
+
+  @media (map-get($breakpoints, "large")) {
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 20px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    gap: 37px;
+  }
 }
 
 .menu__item {
   width: 100%;
+
+  @media (map-get($breakpoints, "large")) {
+    width: auto;
+  }
 }
 
 .menu__link {
@@ -98,5 +157,17 @@
 
   @media (map-get($breakpoints, "small")) {
     font-size: 32px;
+  }
+
+  @media (map-get($breakpoints, "large")) {
+    padding: 10px 8px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-font--light);
+
+    .menu__list > .menu__item:first-child > & {
+      padding: 10px 8px 10px 0;
+    }
   }
 }

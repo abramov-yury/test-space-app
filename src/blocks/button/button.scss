@@ -24,4 +24,12 @@
   @media (map-get($breakpoints, "small")) {
     padding: 20px 55px 22px;
   }
+
+  @media (map-get($breakpoints, "large")) {
+    padding: 16px 32px 18px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 20px 55px 22px;
+  }
 }
