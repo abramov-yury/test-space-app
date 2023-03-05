@@ -1,4 +1,5 @@
 @import "../../styles/mixins";
+@import "../../styles/maps";
 
 .menu {
   display: flex;
@@ -6,6 +7,10 @@
   align-items: center;
 
   --height--first-layer: 60px;
+
+  @media (map-get($breakpoints, "small")) {
+    --height--first-layer: 70px;
+  }
 }
 
 .menu__first-layer {
@@ -21,6 +26,11 @@
 
 .menu__logo {
   width: 180px;
+  transition: width .2s;
+
+  @media (map-get($breakpoints, "small")) {
+    width: 225px;
+  }
 }
 
 .menu__second-layer {
@@ -43,7 +53,7 @@
 
   background-color: var(--color-background--light);
 
-  @media (max-height: 400px) {
+  @media (max-height: 420px) and (max-width: 768px) {
     justify-content: flex-start;
   }
 }
@@ -83,4 +93,10 @@
   line-height: 1.2;
   color: var(--color-font);
   text-decoration: none;
+
+  transition: font-size .2s;
+
+  @media (map-get($breakpoints, "small")) {
+    font-size: 32px;
+  }
 }

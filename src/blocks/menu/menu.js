@@ -4,6 +4,7 @@ const menuSecondLayer = document.querySelector(".menu__second-layer");
 const onTriggerClick = () => {
 
   menuSecondLayer.classList.toggle("menu__second-layer--hidden");
+  document.body.classList.toggle("show-menu");
 
 };
 

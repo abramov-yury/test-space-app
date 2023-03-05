@@ -1,5 +1,11 @@
+@import "../../styles/maps";
+
 .page-header {
   padding: 0 10px;
-
+  transition: padding .2s;
   background-color: var(--color-background--dark);
+
+  @media (map-get($breakpoints, "small")) {
+    padding: 0 16px;
+  }
 }
