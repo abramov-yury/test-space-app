@@ -1,1 +1,45 @@
 $DIRECTORY : "../../assets/fonts";
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PF Agora Sans Pro";
+
+  font-display: swap;
+  src:
+    url("#{$DIRECTORY}/PFAgoraSansPro-Regular.woff2") format("woff2"),
+    url("#{$DIRECTORY}/PFAgoraSansPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "PF Agora Sans Pro";
+
+  font-display: swap;
+  src:
+    url("#{$DIRECTORY}/PFAgoraSansPro-Medium.woff2") format("woff2"),
+    url("#{$DIRECTORY}/PFAgoraSansPro-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PF Agora Sans Pro";
+
+  font-display: swap;
+  src:
+    url("#{$DIRECTORY}/PFAgoraSansPro-Bold.woff2") format("woff2"),
+    url("#{$DIRECTORY}/PFAgoraSansPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "PF Agora Sans Pro";
+
+  font-display: swap;
+  src:
+    url("#{$DIRECTORY}/PFAgoraSansPro-Black.woff2") format("woff2"),
+    url("#{$DIRECTORY}/PFAgoraSansPro-Black.woff") format("woff");
+}
