@@ -1,0 +1,49 @@
+@import "../../styles/maps";
+
+.feature {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-background--dark);
+
+  @media (map-get($breakpoints, "medium")) {
+    background-image: url("../../assets/img/feature.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (map-get($breakpoints, "medium")) and (min-resolution: 2dppx) {
+    background-image: url("../../assets/img/feature@2x.png");
+  }
+
+  @media (map-get($breakpoints, "medium")) and (min-resolution: 3dppx) {
+    background-image: url("../../assets/img/feature@3x.png");
+  }
+}
+
+.feature__title {
+  order: 2;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-font--light);
+}
+
+.feature__text {
+  order: 3;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-font--light);
+}
+
+.feature__icon {
+  order: 1;
+  width: 73px;
+  height: 73px;
+  margin-bottom: 25px;
+}
