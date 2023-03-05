@@ -1,0 +1,6 @@
+mixin button(text, href, parent)
+
+  -
+    className = getClassName("button", parent)
+
+  a(class=className href=href) #{text}

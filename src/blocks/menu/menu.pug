@@ -1,0 +1,22 @@
+include ../menu-trigger/menu-trigger
+include ../button/button
+
+mixin menu
+
+  -
+    items = [
+      {text: "Главная", href: "#"},
+      {text: "Продукты", href: "#"},
+      {text: "Кейсы", href: "#"},
+      {text: "Экспертное мнение", href: "#"},
+      {text: "Контакты", href: "#"},
+    ]
+
+  nav.menu
+    +menu-trigger
+    ul.menu__list
+      each item in items
+        li.menu__item
+          a.menu__link(href=item.href) #{item.text}
+
+    +button("Запросить презентацию", "#", "menu")
