@@ -2,6 +2,7 @@ extends ../../templates/staffolding
 include ../../templates/helpers
 
 include ../../blocks/page-header/page-header
+include ../../blocks/page-content/page-content
 include ../../blocks/page-footer/page-footer
 
 block variables
@@ -12,6 +13,6 @@ block variables
 block header
   +page-header
 block main
-  main.page-content
+  +page-content
 block footer
   +page-footer

@@ -1,0 +1,33 @@
+@import "../../styles/maps";
+
+.intro {
+  padding: 40px 10px 0;
+  transition: padding .2s;
+
+  background-color: var(--color-background--dark);
+
+  @media (map-get($breakpoints, "small")) {
+    padding: 40px 16px 0;
+  }
+
+  @media (map-get($breakpoints, "large")) {
+    padding: 0 20px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+.intro__title {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding-bottom: 10px;
+
+  color: var(--color-font--light);
+  text-align: center;
+}
