@@ -11,13 +11,14 @@
   }
 
   @media (map-get($breakpoints, "large")) {
-    padding: 0 20px;
+    padding: 40px 20px 0;
+    background-color: transparent;
   }
 
   @media (map-get($breakpoints, "extra-large")) {
     width: 1230px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 42px 30px 0;
   }
 }
 
@@ -34,10 +35,22 @@
   transition-property: font-size, font-weight;
   transition-duration: .2s;
 
-
   @media(map-get($breakpoints, "small")) {
     font-size: 32px;
     font-weight: 900;
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    font-size: 38px;
+  }
+
+  @media (map-get($breakpoints, "large")) {
+    font-size: 46px;
+    justify-content: center;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 64px;
   }
 }
 
@@ -46,10 +59,21 @@
   flex-direction: column;
   gap: 12px;
 
-  padding: 30px 0 20px;
+  padding: 30px 0 12px;
+
+  transition: padding .2s;
 
   @media(map-get($breakpoints, "small")) {
     flex-direction: row;
+  }
+
+  @media(map-get($breakpoints, "large")) {
+    padding: 64px 0 20px;
+  }
+
+  @media(map-get($breakpoints, "extra-large")) {
+    justify-content: space-between;
+    padding: 72px 0 20px;
   }
 }
 
@@ -66,10 +90,21 @@
   @media(map-get($breakpoints, "small")) {
     flex-grow: 1;
   }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    flex-grow: 0;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .intro__sign {
   @media(map-get($breakpoints, "small")) {
     flex-grow: 1;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    flex-grow: 0;
+    align-self: flex-start;
   }
 }

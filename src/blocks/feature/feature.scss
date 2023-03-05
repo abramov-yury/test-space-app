@@ -10,7 +10,7 @@
 
   @media (map-get($breakpoints, "medium")) {
     box-sizing: border-box;
-    padding: 25px;
+    padding: 22px;
     max-width: 600px;
   }
 
@@ -39,7 +39,7 @@
 .feature__title {
   order: 2;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   font-size: 20px;
   font-weight: 700;
@@ -70,6 +70,6 @@
   }
 
   @media (map-get($breakpoints, "medium")) {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
