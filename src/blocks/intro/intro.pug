@@ -3,11 +3,13 @@ include ../sign/sign
 
 mixin intro
 
+  - let name = "intro"
+
   section.intro
     h1.intro__title(lang="en") AI-Driven Analytics Platform
     .intro__features
       +feature
-      ul.signs
-        +sing("analysis")
-        +sing("interpretation")
-        +sing("visualization")
+      ul.intro__signs
+        +sing("analysis", name)
+        +sing("interpretation", name)
+        +sing("visualization", name)

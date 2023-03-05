@@ -1,16 +1,19 @@
-mixin sing(name)
+mixin sing(name, parent)
 
-  li.sing
+  -
+    className = getClassName("sign", parent)
+
+  li(class=className)
     case name
       when "analysis"
-        svg.sing__icon(width="73" height="73")
+        svg.sign__icon(width="73" height="73")
           use(href="#analysis-icon")
-        span.sing__text Анализ
+        span.sign__text Анализ
       when "interpretation"
-        svg.sing__icon(width="73" height="73")
+        svg.sign__icon(width="73" height="73")
           use(href="#interpretation-icon")
-        span.sing__text Визуализация
+        span.sign__text Визуализация
       when "visualization"
-        svg.sing__icon(width="73" height="73")
+        svg.sign__icon(width="73" height="73")
           use(href="#visualization-icon")
-        span.sing__text Интерпретация
+        span.sign__text Интерпретация

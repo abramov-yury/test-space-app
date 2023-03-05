@@ -53,7 +53,7 @@
   }
 }
 
-.signs {
+.intro__signs {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -62,4 +62,14 @@
   padding: 0;
 
   list-style: none;
+
+  @media(map-get($breakpoints, "small")) {
+    flex-grow: 1;
+  }
+}
+
+.intro__sign {
+  @media(map-get($breakpoints, "small")) {
+    flex-grow: 1;
+  }
 }

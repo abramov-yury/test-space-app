@@ -8,7 +8,19 @@
   background-color: rgb(#a86454, .2);
   border-radius: 10px;
 
+  @media (map-get($breakpoints, "medium")) {
+    box-sizing: border-box;
+    padding: 25px;
+    max-width: 600px;
+  }
+
   @media (map-get($breakpoints, "large")) {
+    width: 600px;
+    height: 325px;
+
+    border: 2px solid rgb(#646464, .33);
+    border-radius: 20px;
+
     background-image: url("../../assets/img/feature.png");
     background-position: center;
     background-size: cover;
@@ -49,8 +61,15 @@
   height: 73px;
   margin-bottom: 20px;
 
-  @media(map-get($breakpoints, "small")) {
+  transition-property: width, height;
+  transition-duration: .2s;
+
+  @media(map-get($breakpoints, "medium")) {
     width: 93px;
     height: 93px;
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    margin-bottom: 25px;
   }
 }

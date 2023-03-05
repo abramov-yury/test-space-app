@@ -1,6 +1,6 @@
 @import "../../styles/maps";
 
-.sing {
+.sign {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -9,13 +9,9 @@
 
   background-color: rgba(196, 196, 196, .2);
   border-radius: 10px;
-
-  @media(map-get($breakpoints, "small")) {
-    flex-grow: 1;
-  }
 }
 
-.sing__text {
+.sign__text {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
