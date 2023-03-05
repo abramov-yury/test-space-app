@@ -19,9 +19,9 @@ body {
   font-size: inherit;
   font-weight: 400;
   line-height: 1.375;
-  color: #000000;
+  color: var(--color-font);
 
-  background-color: #ffffff;
+  background-color: var(--color-background--light);
 }
 
 .page-content {

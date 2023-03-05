@@ -1,3 +1,4 @@
+include ../logo/logo
 include ../menu-trigger/menu-trigger
 include ../button/button
 
@@ -13,10 +14,13 @@ mixin menu
     ]
 
   nav.menu
-    +menu-trigger
-    ul.menu__list
-      each item in items
-        li.menu__item
-          a.menu__link(href=item.href) #{item.text}
+    .menu__first-layer
+      +logo("menu")
+      +menu-trigger
+    .menu__second-layer
+      ul.menu__list
+        each item in items
+          li.menu__item
+            a.menu__link(href=item.href) #{item.text}
 
-    +button("Запросить презентацию", "#", "menu")
+      +button("Запросить презентацию", "#", "menu")
