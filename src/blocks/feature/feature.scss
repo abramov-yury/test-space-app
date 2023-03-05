@@ -3,21 +3,23 @@
 .feature {
   display: flex;
   flex-direction: column;
+  padding: 8px;
 
-  background-color: var(--color-background--dark);
+  background-color: rgb(#a86454, .2);
+  border-radius: 10px;
 
-  @media (map-get($breakpoints, "medium")) {
+  @media (map-get($breakpoints, "large")) {
     background-image: url("../../assets/img/feature.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media (map-get($breakpoints, "medium")) and (min-resolution: 2dppx) {
+  @media (map-get($breakpoints, "large")) and (min-resolution: 2dppx) {
     background-image: url("../../assets/img/feature@2x.png");
   }
 
-  @media (map-get($breakpoints, "medium")) and (min-resolution: 3dppx) {
+  @media (map-get($breakpoints, "large")) and (min-resolution: 3dppx) {
     background-image: url("../../assets/img/feature@3x.png");
   }
 }
@@ -45,5 +47,10 @@
   order: 1;
   width: 73px;
   height: 73px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+
+  @media(map-get($breakpoints, "small")) {
+    width: 93px;
+    height: 93px;
+  }
 }
