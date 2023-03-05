@@ -5,7 +5,7 @@ include ../button/button
 mixin menu
 
   -
-    items = [
+    let items = [
       {text: "Главная", href: "#"},
       {text: "Продукты", href: "#"},
       {text: "Кейсы", href: "#"},
@@ -13,14 +13,16 @@ mixin menu
       {text: "Контакты", href: "#"},
     ]
 
+    let name = "menu"
+
   nav.menu
     .menu__first-layer
-      +logo("menu")
-      +menu-trigger
-    .menu__second-layer
+      +logo(name)
+      +menu-trigger(name)
+    .menu__second-layer.menu__second-layer--hidden
       ul.menu__list
         each item in items
           li.menu__item
             a.menu__link(href=item.href) #{item.text}
 
-      +button("Запросить презентацию", "#", "menu")
+      +button("Запросить презентацию", "#", name)
