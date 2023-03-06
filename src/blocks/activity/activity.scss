@@ -22,12 +22,39 @@
     margin: 0 auto;
     padding: 0 30px;
   }
+
+  @media (min-width: 1480px) {
+    padding: 0 30px 0 208px;
+  }
+}
+
+.activity__title {
+  @media (map-get($breakpoints, "large")) {
+    max-width: 618px
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    margin-bottom: 35px;
+  }
 }
 
 .activity__swiper {
   box-sizing: border-box;
   width: 100%;
   padding-bottom: 50px;
+
+  background-image: url("../../assets/img/ovals.svg");
+  background-repeat: no-repeat;
+  background-position: left 51% top 27%;
+
+  @media (map-get($breakpoints, "huge")) {
+    padding-bottom: 70px;
+  }
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -37,7 +64,7 @@
     height: 16px;
 
     background-color: var(--color-background--light);
-    border: 2px solid var(--color-background--accent)
+    border: 2px solid var(--color-background--accent);
   }
 
   &::before {
@@ -54,4 +81,7 @@
 
     background-color: var(--color-background--accent);
   }
+
 }
+
+

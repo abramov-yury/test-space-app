@@ -1,3 +1,5 @@
+@import "../../styles/maps";
+
 .conversion {
   position: relative;
   display: flex;
@@ -28,6 +30,20 @@
       left: 20px;
     }
   }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    box-sizing: border-box;
+    width: 582px;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    padding-left: 15px;
+    gap: 80px;
+
+    &::before {
+      left: 12px
+    }
+  }
 }
 
 .conversion__title {
@@ -46,6 +62,14 @@
   gap: 10px;
 
   margin: 0;
+
+  @media (min-width: 600px) {
+    gap: 20px;
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    gap: 40px;
+  }
 }
 
 .conversion__item {
@@ -53,6 +77,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (min-width: 600px) {
+    position: relative;
+    flex-direction: row;
+    align-self: stretch;
+  }
 }
 
 .conversion__term,
@@ -60,6 +90,14 @@
   font-size: 22px;
   line-height: 1;
   color: #000000;
+
+  @media (min-width: 426px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 32px;
+  }
 }
 
 .conversion__term,
@@ -82,10 +120,39 @@
   }
 }
 
+.conversion__term {
+  @media (min-width: 600px) {
+    &::after {
+      left: 220px;
+    }
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    &::after {
+      left: 244px;
+    }
+  }
+}
+
 .conversion__description {
   margin: 0;
 
   &::after {
     transform: translateY(-50%) rotate(180deg);
   }
+
+  @media (min-width: 600px) {
+    position: absolute;
+    left: 280px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    left: 316px;
+  }
+
+
 }

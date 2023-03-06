@@ -1,3 +1,27 @@
+@import "../../styles/maps";
+
 .page-content {
-  flex-grow: 1
+  flex-grow: 1;
+  transition: padding-bottom .2s;
+  padding-bottom: 30px;
+
+  @media (map-get($breakpoints, "small")) {
+    padding-bottom: 50px;
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    padding-bottom: 60px;
+  }
+
+  @media (map-get($breakpoints, "large")) {
+    padding-bottom: 70px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    padding-bottom: 80px;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    padding-bottom: 90px;
+  }
 }

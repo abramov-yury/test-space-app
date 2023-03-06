@@ -9,6 +9,6 @@ mixin first-chart
     +title("Промо-давление увеличивается", name)
 
     .first-chart__wrapper-canvas
-      canvas.first-chart__canvas
+      canvas.first-chart__canvas(aria-label="График увеличения промо-давления" role="img")
 
     +button("Почему увеличивается?", "#", name, "alternative")
