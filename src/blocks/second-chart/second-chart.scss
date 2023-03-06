@@ -1,0 +1,44 @@
+@import "../../styles/maps";
+
+.second-chart {
+
+}
+
+.second-chart__content {
+  position: relative;
+  display: none;
+
+  width: 702px;
+  height: 612px;
+
+  @media (map-get($breakpoints, "medium")) {
+    display: block;
+  }
+}
+
+.second-chart__wrapper-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.second-chart__image {
+  position: absolute;
+  top: 55px;
+  left: 69px;
+
+  width: 476px;
+  height: 585px;
+
+  background-image: url("../../assets/img/man.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../assets/img/man@2x.png");
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../../assets/img/man@3x.png");
+  }
+}

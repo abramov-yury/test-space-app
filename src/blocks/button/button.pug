@@ -1,6 +1,7 @@
-mixin button(text, href, parent)
+mixin button(text, href, parent, modifier = "default")
 
   -
     className = getClassName("button", parent)
+    className = `${className} button--${modifier}`
 
   a(class=className href=href) #{text}

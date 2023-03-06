@@ -1,0 +1,52 @@
+@import "../../styles/maps";
+
+.title {
+  position: relative;
+  margin: 0;
+  padding-top: 18px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  transition-property: padding, font-weight, font-size;
+  transition-duration: .2s;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 6px;
+
+    background-color: var(--color-background--accent);
+
+    @media (map-get($breakpoints, "small")) {
+      height: 8px;
+    }
+  }
+
+  @media (min-width: 426px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 476px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 512px) {
+    font-size: 24px;
+  }
+
+  @media (map-get($breakpoints, "small")) {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.65;
+  }
+
+  @media (map-get($breakpoints, "medium")) {
+    font-size: 32px;
+  }
+}

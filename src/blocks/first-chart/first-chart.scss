@@ -1,0 +1,17 @@
+@import "../../styles/maps";
+
+.first-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.first-chart__wrapper-canvas {
+  display: none;
+  width: 582px;
+  height: 368px;
+
+  @media (map-get($breakpoints, "medium")) {
+    display: block;
+  }
+}

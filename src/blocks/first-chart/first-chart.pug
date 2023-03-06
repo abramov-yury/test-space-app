@@ -1,0 +1,12 @@
+include ../title/title
+include ../button/button
+
+mixin first-chart
+
+  section.first-chart
+    +title("Промо-давление увеличивается")
+
+    .first-chart__wrapper-canvas
+      canvas.first-chart__canvas
+
+    +button("Почему увеличивается?", "#", "first-chart", "alternative")
