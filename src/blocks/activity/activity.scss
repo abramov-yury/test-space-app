@@ -48,7 +48,7 @@
   background-position: left 51% top 27%;
 
   @media (map-get($breakpoints, "huge")) {
-    padding-bottom: 70px;
+    padding-bottom: 178px;
   }
 }
 
@@ -62,6 +62,7 @@
     position: relative;
     width: 16px;
     height: 16px;
+    bottom: 108px;
 
     background-color: var(--color-background--light);
     border: 2px solid var(--color-background--accent);
