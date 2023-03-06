@@ -6,3 +6,4 @@ import "../../blocks/menu/menu.js";
 import "../../blocks/menu-trigger/menu-trigger.js";
 import "../../blocks/first-chart/first-chart.js";
 import "../../blocks/second-chart/second-chart.js";
+import "../../blocks/activity/activity.js";
