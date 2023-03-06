@@ -5,11 +5,11 @@
   flex-direction: column;
   gap: 24px;
 
-  padding-bottom: 20px;
+  padding: 0 10px 20px;
   transition: padding .2s;
 
   @media (map-get($breakpoints, "small")) {
-    padding: 0 16px;
+    padding: 0 16px 20px;
   }
 
   @media (map-get($breakpoints, "large")) {
