@@ -1,0 +1,59 @@
+.conversion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  @media (min-width: 426px) {
+    padding-left: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-value);
+
+    top: -10px;
+    left: 0;
+
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1;
+
+    color: var(--color-font--element);
+
+    @media (min-width: 426px) {
+      left: 20px;
+    }
+  }
+}
+
+.conversion__title {
+  z-index: 10;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-font);
+}
+
+.conversion__list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+.conversion__termin,
+.conversion__description {
+  font-size: 32px;
+  line-height: 1;
+  color: #000000;
+}
+
+.conversion__description {
+  margin: 0;
+}

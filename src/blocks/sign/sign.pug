@@ -6,14 +6,14 @@ mixin sing(name, parent)
   li(class=className)
     case name
       when "analysis"
-        svg.sign__icon(width="73" height="73")
+        svg.sign__icon(width="73" height="73" role="presentation" hidden="true")
           use(href="#analysis-icon")
         span.sign__text Анализ
       when "interpretation"
-        svg.sign__icon(width="73" height="73")
+        svg.sign__icon(width="73" height="73" role="presentation" hidden="true")
           use(href="#interpretation-icon")
         span.sign__text Интерпретация
       when "visualization"
-        svg.sign__icon(width="73" height="73")
+        svg.sign__icon(width="73" height="73" role="presentation" hidden="true")
           use(href="#visualization-icon")
         span.sign__text Визуализация

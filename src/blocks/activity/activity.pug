@@ -1,0 +1,12 @@
+include ../title/title
+include ../processing/processing
+include ../conversion/conversion
+
+mixin activity
+
+  section.activity
+    +title("Собираем и обрабатываем гранулярные данные на уровне сети", "activity")
+
+    .activity__swiper
+      +processing
+      +conversion
