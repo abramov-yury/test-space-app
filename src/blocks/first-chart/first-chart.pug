@@ -3,10 +3,12 @@ include ../button/button
 
 mixin first-chart
 
+  - let name = "first-chart"
+
   section.first-chart
-    +title("Промо-давление увеличивается")
+    +title("Промо-давление увеличивается", name)
 
     .first-chart__wrapper-canvas
       canvas.first-chart__canvas
 
-    +button("Почему увеличивается?", "#", "first-chart", "alternative")
+    +button("Почему увеличивается?", "#", name, "alternative")

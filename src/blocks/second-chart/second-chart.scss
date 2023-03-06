@@ -1,7 +1,35 @@
 @import "../../styles/maps";
 
 .second-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  @media (map-get($breakpoints, "medium")) {
+    align-items: center;
+    gap: 24px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    gap: 32px;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    align-items: flex-start;
+    padding-top: 21px;
+  }
+}
+
+.second-chart__title {
+  @media (map-get($breakpoints, "extra-large")) {
+    max-width: 492px;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    transform: translateX(35px);
+  }
 }
 
 .second-chart__content {
@@ -13,6 +41,10 @@
 
   @media (map-get($breakpoints, "medium")) {
     display: block;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    transform: translateX(16px);
   }
 }
 

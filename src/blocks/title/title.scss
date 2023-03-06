@@ -7,9 +7,9 @@
 
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.2;
 
-  transition-property: padding, font-weight, font-size;
+  transition-property: padding, font-weight, font-size, transform;
   transition-duration: .2s;
 
   &::before {
@@ -43,10 +43,13 @@
   @media (map-get($breakpoints, "small")) {
     font-size: 28px;
     font-weight: 900;
-    line-height: 1.65;
   }
 
   @media (map-get($breakpoints, "medium")) {
     font-size: 32px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    padding-top: 24px;
   }
 }

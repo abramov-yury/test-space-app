@@ -3,9 +3,7 @@
 
 .button {
   @include condition;
-
   display: flex;
-
   align-items: center;
   font-size: 18px;
   font-weight: 700;
@@ -59,6 +57,14 @@
   }
 
   @media (map-get($breakpoints, "medium")) {
+    padding: 17px 80px 19px;
 
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-font--light);
+
+    background-color: var(--color-background--accent);
+    border-radius: 10px;
   }
 }

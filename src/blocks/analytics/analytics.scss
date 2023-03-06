@@ -15,4 +15,24 @@
   @media (map-get($breakpoints, "large")) {
     padding: 12px 20px;
   }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+
+    max-width: 1328px;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+
+  @media (min-width: 1348px) {
+    transform: translateX(20px);
+  }
 }

@@ -4,6 +4,27 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (map-get($breakpoints, "medium")) {
+    align-items: center;
+    gap: 24px;
+    padding-top: 20px;
+  }
+
+  @media (map-get($breakpoints, "extra-large")) {
+    gap: 15px;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    align-items: flex-start;
+    padding-top: 21px;
+  }
+}
+
+.first-chart__title {
+  @media (map-get($breakpoints, "extra-large")) {
+    max-width: 284px;
+  }
 }
 
 .first-chart__wrapper-canvas {
@@ -13,5 +34,24 @@
 
   @media (map-get($breakpoints, "medium")) {
     display: block;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    transform: translateX(44px);
+    margin-bottom: 45px;
+  }
+
+}
+
+.first-chart__button {
+  align-self: flex-start;
+
+  @media (map-get($breakpoints, "medium")){
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  @media (map-get($breakpoints, "huge")) {
+    transform: translateX(8px);
   }
 }

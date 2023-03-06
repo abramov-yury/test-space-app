@@ -65,7 +65,7 @@ const options = {
   },
   layout: {
     padding: {
-      left: -30,
+      left: -24,
       bottom: -30,
     },
   },
@@ -100,7 +100,7 @@ const options = {
           weight: 400,
           color: "#999999",
         },
-        padding: 30,
+        padding: 28,
       },
       max: 60,
       min: 30,
