@@ -25,7 +25,7 @@ const options = {
       hoverRadius: 8,
       borderWidth: 0,
       hoverBorderWidth: 0,
-      pointStyle: [pointImage],
+      // pointStyle: [pointImage],
     },
   },
   plugins: {
